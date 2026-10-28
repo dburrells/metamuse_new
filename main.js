@@ -8,7 +8,7 @@
   "use strict";
 
   var config = {
-    GA_ID: "",            // e.g. "G-ABC123DEF4"
+    GA_ID: "G-TE1LMGXTCG",
     FORM_ENDPOINT: ""     // e.g. "https://formspree.io/f/xxxxxxxx"
   };
 
