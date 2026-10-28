@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Sunlit stone colonnade with dark glass between the columns">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9d9bd"/>
+      <stop offset="0.55" stop-color="#d9c29a"/>
+      <stop offset="1" stop-color="#b89668"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a98a5e"/>
+      <stop offset="1" stop-color="#6d5633"/>
+    </linearGradient>
+    <linearGradient id="pillar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f3e6cd"/>
+      <stop offset="0.35" stop-color="#e2cfa9"/>
+      <stop offset="0.8" stop-color="#c9ad7e"/>
+      <stop offset="1" stop-color="#9e8052"/>
+    </linearGradient>
+    <linearGradient id="pillarFar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ead9ba"/>
+      <stop offset="0.5" stop-color="#d4bb90"/>
+      <stop offset="1" stop-color="#a98c5f"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f5a5e"/>
+      <stop offset="0.25" stop-color="#1d3237"/>
+      <stop offset="0.55" stop-color="#2a3b3e"/>
+      <stop offset="0.75" stop-color="#5a4a35"/>
+      <stop offset="1" stop-color="#1e1a14"/>
+    </linearGradient>
+    <linearGradient id="glassSheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#ffd9a6" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lightShaft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2d6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff2d6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shadowCast" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4b3a22" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#4b3a22" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="travertine" width="800" height="14" patternUnits="userSpaceOnUse">
+      <rect width="800" height="14" fill="none"/>
+      <line x1="0" y1="4" x2="800" y2="4" stroke="#7a6240" stroke-opacity="0.07" stroke-width="1"/>
+      <line x1="0" y1="11" x2="800" y2="11" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- ground and backdrop -->
+  <rect width="800" height="1000" fill="url(#sky)"/>
+  <rect x="0" y="820" width="800" height="180" fill="url(#floor)"/>
+
+  <!-- far colonnade (receding) -->
+  <g>
+    <rect x="612" y="-20" width="56" height="850" fill="url(#pillarFar)"/>
+    <rect x="668" y="-20" width="38" height="850" fill="url(#glass)"/>
+    <rect x="706" y="-20" width="46" height="850" fill="url(#pillarFar)"/>
+    <rect x="752" y="-20" width="30" height="850" fill="url(#glass)"/>
+    <rect x="782" y="-20" width="18" height="850" fill="url(#pillarFar)"/>
+  </g>
+
+  <!-- main colonnade -->
+  <g>
+    <rect x="-20" y="-20" width="150" height="860" fill="url(#pillar)"/>
+    <rect x="130" y="-20" width="78" height="860" fill="url(#glass)"/>
+    <rect x="130" y="-20" width="78" height="860" fill="url(#glassSheen)"/>
+    <rect x="208" y="-20" width="150" height="860" fill="url(#pillar)"/>
+    <rect x="358" y="-20" width="70" height="860" fill="url(#glass)"/>
+    <rect x="358" y="-20" width="70" height="860" fill="url(#glassSheen)"/>
+    <rect x="428" y="-20" width="130" height="860" fill="url(#pillar)"/>
+    <rect x="558" y="-20" width="54" height="860" fill="url(#glass)"/>
+    <rect x="558" y="-20" width="54" height="860" fill="url(#glassSheen)"/>
+  </g>
+
+  <!-- stone bands -->
+  <rect x="-20" y="-20" width="820" height="860" fill="url(#travertine)"/>
+  <g stroke="#7a6240" stroke-opacity="0.18" stroke-width="1.2">
+    <line x1="-20" y1="170" x2="612" y2="170"/>
+    <line x1="-20" y1="360" x2="612" y2="360"/>
+    <line x1="-20" y1="550" x2="612" y2="550"/>
+    <line x1="-20" y1="740" x2="612" y2="740"/>
+  </g>
+
+  <!-- cast shadows on the floor -->
+  <rect x="0" y="820" width="800" height="180" fill="url(#shadowCast)"/>
+  <g opacity="0.55">
+    <polygon points="130,820 208,820 300,1000 170,1000" fill="#2a2420" opacity="0.35"/>
+    <polygon points="358,820 428,820 540,1000 420,1000" fill="#2a2420" opacity="0.32"/>
+    <polygon points="558,820 612,820 720,1000 630,1000" fill="#2a2420" opacity="0.28"/>
+  </g>
+
+  <!-- floor reflections of the glass -->
+  <g opacity="0.35">
+    <rect x="130" y="820" width="78" height="180" fill="#1d3237"/>
+    <rect x="358" y="820" width="70" height="180" fill="#1d3237"/>
+    <rect x="558" y="820" width="54" height="180" fill="#1d3237"/>
+  </g>
+
+  <!-- warm light shaft -->
+  <polygon points="0,0 420,0 800,620 800,1000 520,1000 0,340" fill="url(#lightShaft)" filter="url(#soft)" opacity="0.7"/>
+</svg>
