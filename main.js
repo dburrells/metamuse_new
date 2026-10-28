@@ -9,7 +9,7 @@
 
   var config = {
     GA_ID: "G-TE1LMGXTCG",
-    FORM_ENDPOINT: ""     // e.g. "https://formspree.io/f/xxxxxxxx"
+    FORM_ENDPOINT: "https://formspree.io/f/myeejllw"
   };
 
   var CONSENT_KEY = "mm-consent"; // "granted" | "denied"
